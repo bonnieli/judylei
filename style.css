@@ -149,3 +149,12 @@ body #cover .contact:hover {
   background-color: #ffffff;
   color: #000000;
 }
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-width: 600px) {
+  #cover-parallax .parallax {
+    background-attachment: scroll;
+    background-color: #3d5a80;
+    background-image: none;
+    text-align: center;
+  }
+}
