@@ -4,6 +4,10 @@
 @white: #ffffff;
 @black: #000000;
 
+body, html {
+    height: 100%;
+}
+
 body {
 	/*font-family: 'Montserrat', sans-serif;*/
 	font-family: 'EB Garamond', serif;
@@ -68,6 +72,50 @@ body {
 	#cover-header {
 		margin-top: 100px;
 		margin-left: 100px;
+	}
+
+	.parallax {
+		text-transform: uppercase;
+		padding: 100px;
+		
+		/* The image used */
+		background-image: url('images/cover copy.jpg');
+
+		height: 400px;
+		width: 100%;
+
+		/* Create the parallax scrolling effect */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		h1, h2 {
+			color: @white;
+		}
+		h1 {
+			font-size: 5em;
+			letter-spacing: 3px;
+			text-shadow: 2px 2px @purplenavy;
+		}
+		h2 {
+			font-size: 1em;
+			letter-spacing: 3px;
+		}
+
+		.contact {
+			font-family: 'Montserrat', sans-serif;
+			text-transform: uppercase;
+			background-color: transparent;
+			font-size: 1em;
+			border: 1px solid @white;
+			color: @white;
+			padding: 10px 20px;
+			&:hover {
+				background-color: @white;
+				color: @black;
+			}
+		}
 	}
 
 	#cover {
